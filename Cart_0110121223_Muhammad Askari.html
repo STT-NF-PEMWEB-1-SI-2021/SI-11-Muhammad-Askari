@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body{
+            width: 800px; 
+            margin: 20px auto; 
+            padding: 15px;
+            }
+            
+        table {
+            border-style: solid;
+            width: 100%;
+            border: 1px solid black
+            }
+        
+        .container {
+            display: flex;
+            }
+        
+        aside {
+            width: 50%;
+            background-color: rgba(212, 209, 209, 0.767);
+            display: grid;
+            }
+            
+        aside table tr td {
+            padding: 10px 0;
+            }
+    </style>
+</head>
+    <body>
+        <form action="checkout.html">
+            <table>
+                    <tr>
+                        <th>Site Name</th>
+                        <th><a href="">Categoty 1 |</a>
+                            <a href="">Categoty 2 |</a>
+                            <a href="">Categoty 3 |</a></th>
+                        <th>
+                            <i class="material-icons">search</i>
+                            <i class="material-icons">shopping_cart</i>
+                            Cart(1)
+                        </th>
+                    </tr>
+                </table>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td><h2>Your Cart</h2></td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <th sty>Item</th>
+                        <th></th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="30" width="100px"><img src="t-shirt.jpg" width="130" height="155" style="border-radius: 5%; margin-right: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Tshirt <br> Size Small</td>
+                        <td><b>$20.00</b></td>
+                        <td>
+                            <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Subtotal: <b>$20.00</b></td>
+                    </tr>
+                </table>
+                <aside>
+                    <table>
+                    <tr>
+                        <td><h2 style="text-align:center">Summary ( 1 item )</h2></td>
+                    </tr>                
+                    <tr>
+                        <td>Subtotal</td>
+                        <td style="text-align:right">$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td style="text-align:right">-</td>
+                    </tr>
+                    <tr>
+                        <td>Est. Taxes</td>
+                        <td style="text-align:right">-</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td style="text-align:right">$20.00</td>
+                    </tr>
+                    </table>
+                    <tr >
+                        <td><input type="submit" name="Checkout" value="Checkout"></td>
+                    </tr>
+                </aside>
+            </div>
+            <table>
+                <tr style="text-align: left;">
+                    <th>Site Name</th>
+                    <th><a href="">Categoty 1 |</a>
+                        <a href="">Categoty 2 |</a>
+                        <a href="">Categoty 3 |</a></th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

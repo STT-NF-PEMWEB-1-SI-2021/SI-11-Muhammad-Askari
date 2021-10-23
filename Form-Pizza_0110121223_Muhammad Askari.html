@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Warung Pizza</title>
+        <style>
+            body{ background-color: rgba(160, 159, 159, 0.151); color: black; width: 800px; margin: 20px auto; padding: 15px;}
+        </style>
+    </head>
+    <body>
+        <form action="submit.html">
+            <h1 style="text-align: center;">Warung Pizza</h1>
+            <p>our 12th wood-fired pizzas are available for delivery. build your custom pizza and we'll deliver it within an hour</p>
+            <p>your information</p>
+            <table>
+                <tr>
+                    <td>Username</td><td>:</td><td><input type="text" name="Username"></td>
+                </tr>
+                <tr>
+                    <td>Address</td><td>:</td><td><input type="text" name="Address"></td>
+                </tr>
+                <tr>
+                    <td>Telephone Number</td><td>:</td><td><input type="text" name="Telephone Number"></td>
+                </tr>
+                <tr>
+                    <td>Email</td><td>:</td><td><input type="text" name="Email"></td>
+                </tr>
+                <tr>
+                     <td>delivery instruction</td><td>:</td><td><textarea></textarea></td>
+                </tr>
+            </table>
+            <h3 style="margin-bottom: -15px;">design your dream pizza:</h3>
+            <p>Pizza specs</p>
+            <h4 style="margin-bottom: -1px;">crust (choose one):</h4>
+            <table>
+                <tr>
+                    <td><input type="radio" name="crust"> Classic white </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="crust"> Multigrain </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="crust"> Cheese-stuffed crust </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="crust"> Gluten-free </td>
+                </tr>
+            </table>
+            <h4 style="margin-bottom: -1px;">toppings (choose as many as you want):</h4>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="toppings">Red sauce</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="toppings">White sauce</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="toppings">Mozzarella cheese</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="toppings">Pepperoni</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="toppings">Mushrooms</td>
+                </tr>
+                <tr>
+                     <td><input type="checkbox" name="toppings">Peppers</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="toppings">Anchovies</td>
+                </tr>
+            </table>
+            <P style="margin-bottom: -3px;">Number</P>
+            <table>
+                <tr>
+                    <td>How many pizzas<input type="number" name="guests" min="1" max="6"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Bring me a pizza!" name="submit"><input type="reset" name="reset"></td>
+
+                 </tr>
+            </table>
+        </form>
+    </body>
+</html>
