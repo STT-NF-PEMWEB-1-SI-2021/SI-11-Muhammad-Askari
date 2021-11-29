@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum 6.3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 5px;
+            background-color: pink;
+        }
+        .main{
+            display: flex;
+            flex: 1;
+            height: 75vh;
+        }
+        aside{
+            background-color:powderblue;
+            flex: 0 15vw;
+        }
+        article{
+            background-color:palevioletred;
+            flex: 1;
+        }
+        .content{
+            height: 95%;  
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .foto{
+            width: 20%;
+        }
+        .foto img{
+            width: 90%;
+        }
+        header, footer {
+            background:mediumseagreen;
+            height: 11vh;
+        }
+        header, footer, article, aside {
+            margin: 5px;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <footer>Footer</footer>
+    <div class="main">
+        <aside>Aside</aside>
+        <article>Article
+            <div class="content">
+                <div class="foto"><img src="img/3.png" alt=""></div>
+                <div class="foto"><img src="img/3.png" alt=""></div>
+                <div class="foto"><img src="img/3.png" alt=""></div>
+            </div>
+        </article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
