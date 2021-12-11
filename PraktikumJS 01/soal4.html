@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>soal 4</title>
+    <script>
+        function hitung(){
+            let x = Number(document.getElementById("bil1").value);
+            let y = Number(document.getElementById("bil2").value);
+            let z = x + y;
+            document.getElementById("bil3").value=z;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" value="" id="bil1" onchange="hitung()"/>
+    <b> + </b><input type="number" value="" id="bil2" onchange="hitung()"/>
+    <b> = </b><input type="number" value="" id="bil3"/>
+</body>
+</html>
