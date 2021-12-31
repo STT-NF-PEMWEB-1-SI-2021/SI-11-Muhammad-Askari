@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table border="1">
+            <tr class="text" style="text-align: center;">
+                <td><b>Kurs Nilai</b> </td>
+                <td><b>Valas</b></td>
+                <td><b>Nilai Rupiah</b></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="Rp"></td>
+                <td>
+                    <select name="valas" id="valas" onchange="matauang()">
+                        <option id="Dolarus">Dollar US</option>
+                        <option id="Dolarsing">Dollar Singapore</option>
+                        <option id="Ringgit">Ringgit Malaysia</option>
+                        <option id="Yen" >Yen Jepan</option>
+                        <option id="Euro" >Euro</option>
+                        <option id="Riyal">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="text" name="" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function matauang(){
+            const dollarus = 9915
+            const dollarsing = 13472
+            const ringgit = 874
+            const yen = 120
+            const euro = 15888
+            const riyal = 3592
+
+            let Rupiah = document.getElementById("Rp").value;
+            let valass = document.getElementById("valas").value;
+            let hasil;
+
+            if (valass=="Dollar US"){
+                hasil=Rupiah*dollarus;
+            } if (valass=="Dollar Singapore"){
+                hasil=Rupiah*dollarsing;
+            } if (valass=="Ringgit Malaysia"){
+                hasil=Rupiah*ringgit;
+            } if (valass=="Yen Jepang"){
+                hasil=Rupiah*yen;
+            } if (valass=="Euro"){
+                hasil=Rupiah*euro;
+            } if (valass=="Riyal Arab Saudi"){
+                hasil=Rupiah*riyal;
+            }
+
+            document.getElementById("hasil").value=hasil;
+        }
+    </script>
+</body>
+</html>

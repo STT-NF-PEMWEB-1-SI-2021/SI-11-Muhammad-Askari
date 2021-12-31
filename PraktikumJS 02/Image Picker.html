@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h2>Pilih Gambar Hewan</h2>
+    <select name="hewan" id="Hewan" onchange="gambarhewan()">
+            <option value="beruang">beruang</option>
+            <option value="kucing">kucing</option>
+            <option value="singa">singa</option>
+            <option value="kuda">kuda</option>
+            <option value="gajah">gajah</option>
+            <option value="kambing">kambing</option>
+    </select>
+    <div>
+        <input type="image" id="hasil">
+    </div>
+
+
+    <script>
+        function gambarhewan(){
+
+            let hewan = document.getElementById("Hewan");
+            let hasil = document.getElementById("hasil");
+
+            if(hewan.value == "beruang"){
+                hasil.src = "img/beruang.jpg"
+                alert("ini gambar beruang")
+            }if (hewan.value == "kucing"){
+                hasil.src = "img/kucing.jpg"
+                alert("ini gambar kucing")
+            }if (hewan.value == "singa"){
+                hasil.src = "img/singa.jpg"
+                alert("ini gambar singa")
+            }if (hewan.value == "kuda"){
+                hasil.src = "img/kuda.png"
+                alert("ini gambar kuda")
+            }if (hewan.value == "gajah"){
+                hasil.src = "img/gajah.jpg"
+                alert("ini gambar gajah")
+            }if (hewan.value == "kambing"){
+                hasil.src = "img/kambing.jpg"
+                alert("ini gambar kambing")
+            }
+        }
+    </script>
+</body>
+</html>

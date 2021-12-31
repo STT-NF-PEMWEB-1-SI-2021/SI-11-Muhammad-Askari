@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        form{
+            border: solid 1px ;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .tabel{
+            margin-bottom: 10px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="tabel">
+                <label for="username">username :</label>
+                <input type="text" name="username" id="username" required placeholder="Nama Akun">
+            </div>
+ 
+            <div class="tabel">
+                <label for="password">password :</label>
+                <input type="password" name="password" id="password" required placeholder="Kata Sandi">
+            </div>
+
+            <div><button type="submit" onclick="masukakun();">Masuk</button></div>
+        </form>
+    </div>
+
+    <script>
+        function masukakun(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if((username == "ahmad2017") && (password == "integrity")){
+                document.body.innerHTML="<h1>Login Sukses</h1>"
+            }
+            else{
+                alert("Login Gagal")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            border: solid 1px ;
+            padding: 20px;
+            width: 25%;
+            border-radius: 10px;
+        }
+        .tabel{
+            margin-bottom: 10px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="datapelanggang">
+            <div class="tabel">
+                <label>Nama Pelanggan :</label>
+                <input type="text" name="username" id="username" required placeholder="Nama anda">
+            </div>
+            <div class="tabel">
+                <label>Email :</label>
+                <input type="email" name="email" id="email" required placeholder="Email anda">
+            </div>
+            <div class="tabel">
+                <label>jam Keberangkatan :</label>
+                <input type="time" name="jamke" id="jamke" required>
+            </div>
+            <div class="tabel">
+                <label>Tujuan Keberangkatan :</label>
+                <input type="text" name="tujuanke" id="tujuanke" required placeholder="Tujuan anda">
+            </div>
+            <div class="tabel">
+                <label>Jumlah Tiket :</label>
+                <input type="number" name="jumtik" id="jumtik" required placeholder="Jumlah Tiket">
+            </div>
+            <div><button type="submit" onclick="data();">Submit</button></div>
+        </form>
+        <div id="hasil"></div>
+    </div>
+    <script>
+        const submit = document.getElementById("submit");
+        const hasil = document.getElementById("hasil");
+
+        submit.onclick = () =>{
+            let username = documen.getElementById("username");
+            let email = document.getElementById("email");
+            let jamke = document.getElementById("jamke");
+            let tujuanke = document.getElementById("tujuanke");
+            let jumtik = document.getElementById("jumtik");
+        }
+
+        const p = document.createElement("p");
+        hasil.appendChild(p);
+        p.innerHTML = "Nama Anda :"+username + "Email :"+email + "jam keberangkatan :"+jamke + "tujuan keberangkatan :"+tujuanke + "jumlah tiket :" + jumtik
+    </script>
+</body>
+</html>

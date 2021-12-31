@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Massage</title>
+    <style>
+        .container{
+            border: 1px solid;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            width: 95%;
+        }
+        button{
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="konten" onsubmit="kirim()">
+            <div id="isi"></div>
+            <form id="pesan">
+                <input type="text" id="teks"> <button id="km">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let kirimpesan = document.getElementById("pesan");
+        let pesan = document.getElementById("isi");
+        let chat = document.getElementById("teks");
+        function handleForm(event){
+            event.preventDefault();
+        }
+        kirimpesan.addEventListener("submit", handleForm)
+        function kirim(){
+            pesan.innerHTML += "<br>" + chat.value + "<br>";
+            kirimpesan.reset()
+        }
+    </script>
+</body>
+</html>
